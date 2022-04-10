@@ -10,7 +10,7 @@ function age() {
     let month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
     if (birthDay > currentDate) {
-        currentDate = currentDate + month[2] - 1;
+        currentDate = currentDate + month[currentMonth - 1];
         currentMonth = currentMonth - 1;
     }
 
